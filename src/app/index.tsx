@@ -7,14 +7,14 @@ const Inicio = () => {
     <ScrollView style={estilos.contenedor} contentContainerStyle={estilos.contenido}>
       <View style={estilos.avatarContenedor}>
         <Ionicons name="person-circle" size={100} color="#2563eb" />
-        <Text style={estilos.nombre}>Elian Alejandro Pira Garcia</Text>
+        <Text style={estilos.nombre}>Sara Jasmin Cruz Calderon</Text>
         <Text style={estilos.profesion}>Tecnólogo en ADSO</Text>
       </View>
 
       <View style={estilos.seccion}>
         <Text style={estilos.subtitulo}>Perfil Profesional</Text>
         <Text style={estilos.parrafo}>
-          Aprendiz del SENA apasionado por el desarrollo de aplicaciones móviles
+          Aprendiz del SENA apasionada por el desarrollo de aplicaciones móviles
           y web. Con habilidades en React Native, JavaScript, HTML5, Python y
           gestión de bases de datos relacionales y no relacionales.
         </Text>
@@ -26,31 +26,36 @@ const Inicio = () => {
           textoBoton="Enviar Correo"
           nombreIcono="mail"
           colorBoton="#E8D464"
-          onPress={() => Alert.alert("Contacto", "Correo: tucorreo@misena.edu.co")}
+          onPress={() => Alert.alert("Contacto", "Correo: s4nsy150@gmail.com")}
         />
         <MiBoton
           textoBoton="Llamar"
           nombreIcono="call"
           colorBoton="#5B7FE8"
-          onPress={() => Alert.alert("Contacto", "Teléfono: 300 000 0000")}
+          onPress={() => Alert.alert("Contacto", "Teléfono: 324 514 3452")}
         />
         <MiBoton
           textoBoton="Ver Perfil LinkedIn"
           nombreIcono="logo-linkedin"
           colorBoton="#0A66C2"
-          onPress={() => Alert.alert("LinkedIn", "linkedin.com/in/tu-usuario")}
+          onPress={() =>
+            Alert.alert(
+              "LinkedIn",
+              "https://www.linkedin.com/in/sara-jasmin-cruz-calderon-9b1261446/"
+            )
+          }
         />
         <MiBoton
-          textoBoton="Facebook"
-          nombreIcono="logo-facebook"
-          colorBoton="#1877F2"
-          onPress={() => Alert.alert("Facebook", "facebook.com/tu-usuario")}
+          textoBoton="TikTok"
+          nombreIcono="logo-tiktok"
+          colorBoton="#000000"
+          onPress={() => Alert.alert("TikTok", "https://www.tiktok.com/@mimijasjas5")}
         />
         <MiBoton
           textoBoton="GitHub"
           nombreIcono="logo-github"
           colorBoton="#24292e"
-          onPress={() => Alert.alert("GitHub", "github.com/tu-usuario/tu-repo")}
+          onPress={() => Alert.alert("GitHub", "https://github.com/jassjy")}
         />
       </View>
     </ScrollView>

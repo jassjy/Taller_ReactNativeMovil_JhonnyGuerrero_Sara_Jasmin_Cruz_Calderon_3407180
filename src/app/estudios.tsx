@@ -6,7 +6,7 @@ const Estudios = () => (
   <ScrollView style={estilos.contenedor} contentContainerStyle={estilos.contenido}>
     <View style={estilos.encabezado}>
       <Ionicons name="phone-portrait-outline" size={80} color="#2563eb" />
-      <Text style={estilos.nombre}>Elian Alejandro Pira Garcia</Text>
+      <Text style={estilos.nombre}>Sara Jasmin Cruz Calderon</Text>
       <Text style={estilos.subtitulo}>Estudios</Text>
     </View>
 
