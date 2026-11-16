@@ -5,8 +5,8 @@ const Experiencia = () => (
   <ScrollView style={estilos.contenedor} contentContainerStyle={estilos.contenido}>
     <TarjetaExperiencia
       cargo="Desarrollador junior (práctica)"
-      empresa="Empresa de ejemplo S.A.S."
-      periodo="2025 - Actualidad"
+      empresa="Magick Park"
+      periodo="2026 - Actualidad"
       descripcion="Desarrollo de funcionalidades móviles con React Native y consumo de APIs."
     />
     <TarjetaExperiencia
