@@ -1,17 +1,13 @@
+import { Ionicons } from "@expo/vector-icons";
 import { StyleSheet, Text, View } from "react-native";
 
-type Props = {
-  cargo: string;
-  empresa: string;
-  periodo: string;
-  descripcion: string;
-};
+type Props = { cargo: string; empresa: string; periodo: string; descripcion: string };
 
 const TarjetaExperiencia = ({ cargo, empresa, periodo, descripcion }: Props) => (
   <View style={estilos.tarjeta}>
+    <View style={estilos.linea}><View style={estilos.marca}><Ionicons name="briefcase-outline" size={18} color="#6957D8" /></View><Text style={estilos.periodo}>{periodo}</Text></View>
     <Text style={estilos.cargo}>{cargo}</Text>
     <Text style={estilos.empresa}>{empresa}</Text>
-    <Text style={estilos.periodo}>{periodo}</Text>
     <Text style={estilos.descripcion}>{descripcion}</Text>
   </View>
 );
@@ -19,16 +15,11 @@ const TarjetaExperiencia = ({ cargo, empresa, periodo, descripcion }: Props) => 
 export default TarjetaExperiencia;
 
 const estilos = StyleSheet.create({
-  tarjeta: {
-    backgroundColor: "#fff",
-    padding: 16,
-    borderRadius: 10,
-    marginVertical: 8,
-    borderWidth: 1,
-    borderColor: "#ccc",
-  },
-  cargo: { fontSize: 16, fontWeight: "bold" },
-  empresa: { fontSize: 14, color: "#2563eb", fontWeight: "600" },
-  periodo: { fontSize: 12, color: "#888", marginBottom: 6 },
-  descripcion: { fontSize: 14, color: "#475569" },
+  tarjeta: { backgroundColor: "#FFFFFF", padding: 17, borderRadius: 17, marginVertical: 7, borderWidth: 1, borderColor: "#ECECF2" },
+  linea: { flexDirection: "row", alignItems: "center", gap: 9, marginBottom: 13 },
+  marca: { width: 34, height: 34, borderRadius: 11, backgroundColor: "#F0EDFF", alignItems: "center", justifyContent: "center" },
+  periodo: { color: "#7165BF", fontSize: 11, fontWeight: "700" },
+  cargo: { fontSize: 15, fontWeight: "800", color: "#2A293D", lineHeight: 21 },
+  empresa: { fontSize: 13, color: "#6957D8", fontWeight: "700", marginTop: 4 },
+  descripcion: { fontSize: 13, color: "#686778", lineHeight: 20, marginTop: 10 },
 });
